@@ -1,0 +1,180 @@
+
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+
+
+:root {
+  --bgGreen: #7CC576;
+  --bgLtGreen: #EAF6E9;
+  --bgGray: #F5F5F5;
+}
+
+h1 {
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.bg-green {
+  background-color: #7CC576;
+}
+
+.bg-ltgreen {
+  background-color: #EAF6E9;
+}
+
+.bg-gray {
+  background-color:  #F5F5F5;
+}
+
+.logo-white {
+  width: 5rem;
+  margin: auto;
+}
+
+.logo-black {
+  height: 100%;
+}
+
+/* Begin Intro Stying */
+.intro {
+  height:70vh;
+  background-color: black;
+  background-image: url('assets/images/pattern.jpg');
+  background-repeat: repeat;
+  color: white;
+  text-align: center;
+}
+
+.intro h1 {
+  margin: auto;
+}
+
+/* Begin Nav Styling */
+
+.logo {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  box-shadow: 0 0 0.3rem 0;
+}
+
+#current {
+  color: var(--bgGreen) !important;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(63, 63, 63);
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 1.2rem 0.3rem;
+}
+
+.nav-links a:hover {
+  color: white;
+  background-color: green;
+}
+
+.about-card {
+  box-shadow: 1em gray;
+  padding: 1em;
+}
+
+ul {
+  list-style-image: url('assets/images/check.svg');
+}
+
+.service-card { 
+  height: 30vh;
+  overflow: hidden;
+}
+
+.service-card img {
+  max-height: 100%;
+}
+
+.service-info {
+  width: 100%;
+  height: 20%;
+  display: flex;
+}
+
+.service-info h3, p {
+  font-size: small;
+  padding: 0;
+  margin: 0;
+}
+
+.testimonials{
+  background-image: url('assets/images/background.jpg');
+  padding: 3rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonials img{
+  width: 4rem;
+
+}
+
+.selector{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.selector div{
+  height: 1rem;
+  width: 1rem;
+  background-color: white;
+  margin-right: 1rem;
+  border-radius: 100%;
+
+}
+
+.testimonial-slider{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin:1rem 0;
+}
+
+footer{
+  background: #000;
+  color: white;
+  
+}
+
+footer img{
+  height: 7rem;
+}
